@@ -1,6 +1,11 @@
 @import "vendors/normalize";
 @import "vendors/modern-css-reset";
 
+$clr-primary: #070439;
+$clr-primary-light: #585989;
+$clr-accent: #3065f8;
+$clr-accent-2: #3c9f8f;
+
 $ff-title: "Raleway", sans-serif;
 $ff-body: "Open Sans", sans-serif;
 
@@ -30,6 +35,11 @@ h3 {
 
 .container {
   padding: 0 30px;
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
 }
 
 .main-header {
@@ -47,11 +57,20 @@ h3 {
 
 .main-header__logo-image {
   width: 70px;
+
+  @media (min-width: 1024px) {
+    width: 96px;
+  }
 }
 
 .row {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    margin: 0px -30px;
+  }
 }
 
 .row-xs-reverse {
@@ -77,3 +96,7 @@ h3 {
 
 @import "components/main-nav";
 @import "pages/homepage";
+
+.main-footer__col-md-3 {
+  flex: 1 0 25%;
+}
