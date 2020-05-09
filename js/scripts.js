@@ -37,7 +37,8 @@
   }
 
   const getFieldName = (input) => {
-    return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+    const newInput = input.id.replace(/[-\d]/g, '');
+    return newInput.charAt(0).toUpperCase() + newInput.slice(1);
   }
 
   const checkRequired = (inputs) => {
@@ -63,10 +64,10 @@
   infoForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    checkRequired([infoForm.email])
+    checkRequired([infoForm['email-2']])
 
-    if (infoForm.email.value) {
-      checkEmail(infoForm.email);
+    if (infoForm['email-2'].value) {
+      checkEmail(infoForm['email-2']);
     }
   });
 
