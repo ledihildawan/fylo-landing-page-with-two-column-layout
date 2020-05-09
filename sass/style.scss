@@ -11,6 +11,10 @@ $ff-body: "Open Sans", sans-serif;
 
 html {
   font-size: 14px;
+
+  @media (min-width: 960px) {
+    font-size: 16px;
+  }
 }
 
 body {
@@ -46,7 +50,12 @@ h3 {
   position: sticky;
   top: 0;
   padding: 20px 0;
-  background: rgba(#fff, 0.95);
+  transition: all 0.25s ease-in-out;
+
+  &.sticky {
+    background: rgba(#fff, 0.95);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  }
 }
 
 .main-header__wrapper {
@@ -99,4 +108,16 @@ h3 {
 
 .main-footer__col-md-3 {
   flex: 1 0 25%;
+}
+
+.form-message {
+  display: none;
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: center;
+
+  &.show {
+    display: block;
+    color: tomato;
+  }
 }

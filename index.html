@@ -47,9 +47,12 @@
             Access them wherever you need, share and collaborate with friends,
             family, and co-workers.</p>
 
-            <form action="/" class="intro__form" id="intro-form">
-              <label for="email" class="sr-only">Email</label>
-              <input type="text" class="intro__input" placeholder="Enter your email" id="email">
+            <form name="intro-form" action="/" class="intro__form" id="intro-form">
+              <div class="intro__form-control">
+                <label for="email" class="sr-only">Email</label>
+                <input type="text" class="intro__input" placeholder="Enter your email" id="email">
+                <div class="form-message"></div>
+              </div>
               <input class="btn btn-primary intro__btn" type="submit" value="Get Started">
             </form>
           </div>
@@ -115,9 +118,12 @@
             If you have any questions, our support team would be happy to help you.</p>
           </div>
           <div class="info__col info__col-sm-6">
-            <form action="/" class="info__form" id="info-form">
-              <label for="email" class="sr-only">Email</label>
-              <input type="text" class="info__input" placeholder="email@example.com" id="email">
+            <form name="info-form" action="/" class="info__form" id="info-form">
+              <div class="info__form-control">
+                <label for="email" class="sr-only">Email</label>
+                <input type="text" class="info__input" placeholder="email@example.com" id="email">
+                <div class="form-message"></div>
+              </div>
               <input type="submit" value="Get Started For Free" class="info__btn btn btn-primary">
             </form>
           </div>
@@ -199,5 +205,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="/js/scripts.js"></script>
 </body>
 </html>

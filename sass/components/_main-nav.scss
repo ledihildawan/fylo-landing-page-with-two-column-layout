@@ -11,4 +11,13 @@
 .main-nav__link {
   color: $clr-primary;
   text-decoration: none;
+
+  &:focus {
+    outline: 2px dashed $clr-primary;
+    outline-offset: 4px;
+  }
+
+  &:hover {
+    color: $clr-accent;
+  }
 }

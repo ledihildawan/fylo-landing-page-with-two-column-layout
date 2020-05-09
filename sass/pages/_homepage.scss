@@ -21,6 +21,14 @@
 .intro__title {
   margin-bottom: 25px;
   color: $clr-primary;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 28px;
+  }
 }
 
 .intro__copy {
@@ -28,10 +36,13 @@
   color: $clr-primary;
 }
 
+.intro__form-control {
+  margin-bottom: 10px;
+}
+
 .intro__input {
   width: 100%;
   display: block;
-  margin-bottom: 10px;
   border: 1px solid $clr-primary-light;
   border-radius: 4px;
   padding: 10px;
@@ -108,6 +119,14 @@
 .features__title {
   margin-bottom: 25px;
   color: $clr-primary;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 28px;
+  }
 }
 
 .features__copy {
@@ -162,6 +181,10 @@
 .features-card__text {
   color: $clr-primary;
   font-size: 10px;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .features-card__footer {
@@ -179,10 +202,20 @@
 
 .features-card__name {
   font-weight: 700;
+  font-size: 10px;
+
+  @media (min-width: 960px) {
+    font-size: 12px;
+  }
 }
 
 .features-card__job-title {
   color: $clr-primary-light;
+  font-size: 10px;
+
+  @media (min-width: 960px) {
+    font-size: 12px;
+  }
 }
 
 .features__illustration {
@@ -217,10 +250,22 @@
 .info__title {
   font-size: 16px;
   margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 28px;
+  }
 }
 
 .info__form {
   margin-top: 20px;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .info__input {
@@ -231,6 +276,14 @@
   border-radius: 4px;
   padding: 10px;
   font-size: 10px;
+
+  @media (min-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 14px;
+  }
 }
 
 .info__btn {
@@ -251,8 +304,16 @@
   transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
 
+  @media (min-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 14px;
+  }
+
   &:focus {
-    outline: 2px dashed $clr-primary;
+    outline: 2px dashed $clr-accent-2;
     outline-offset: 4px;
   }
 
@@ -280,6 +341,16 @@
 .main-footer__link {
   color: #fff;
   text-decoration: none;
+  transition: color 0.25s ease-in-out;
+
+  &:focus {
+    outline: 2px dashed $clr-accent;
+    outline-offset: 4px;
+  }
+
+  &:hover {
+    color: $clr-accent-2;
+  }
 }
 
 .main-footer__contact {
@@ -292,6 +363,12 @@
 
   &:not(:last-child) {
     margin-bottom: 15px;
+  }
+
+  &:hover {
+    .main-footer-contact__image {
+      opacity: 0.6;
+    }
   }
 }
 
@@ -314,11 +391,28 @@
 .main-footer-social-media__item {
   margin: 0 4px;
 
+  @media (min-width: 768px) {
+    margin: 0 8px;
+  }
+
+  &:hover {
+    .main-footer-social-media__image {
+      opacity: 0.6;
+    }
+  }
+
   &:first-child {
     margin-left: 0;
   }
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.main-footer-social-media__image {
+  @media (min-width: 960px) {
+    height: 32px;
+    width: 32px;
   }
 }
