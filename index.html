@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <link rel="stylesheet" href="/css/style.min.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container main-header__wrapper">
+      <div class="main-header__logo">
+        <a class="main-header__link" href="/">
+          <img src="/images/logo.svg" alt="Fylo logo" class="main-header__logo-image">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a href="/" class="main-nav__link">Features</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="/" class="main-nav__link">Team</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="/" class="main-nav__link">Sign In</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <h1 class="sr-only">Flyo</h1>
+
+    <section class="intro">
+      <div class="intro__wrapper container">
+        <div class="intro__row">
+          <div class="intro__col intro__col-sm-6">
+            <h2 class="intro__title">All your files in one secure location, accessible anywhere.</h2>
+            <p class="intro__copy">Fylo stores your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends,
+            family, and co-workers.</p>
+
+            <form action="/" class="intro__form" id="intro-form">
+              <label for="email" class="sr-only">Email</label>
+              <input type="text" class="intro__input" placeholder="Enter your email" id="email">
+              <input class="btn btn-primary intro__btn" type="submit" value="Get Started">
+            </form>
+          </div>
+          <div class="intro__col intro__col-sm-6">
+            <img src="/images/illustration-1.svg" alt="" class="intro__illustration">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="features__wrapper container">
+        <div class="featuers__row">
+          <div class="features__col features__col-sm-6">
+            <h2 class="features__title">Stay productive, wherever you are</h2>
+            <p class="features__copy">Never let location be an issue when accessing your files. Fylo has you
+            covered for all of your file storage needs.</p>
+            <p class="features__copy">Securely share files and folders with friends, family and colleagues for
+            live collaboration. No email attachments required!</p>
+            <a href="#" class="features__link">See how Fylo works</a>
+
+            <div class="features-card">
+              <div class="features-card__body">
+                <blockquoute class="features-card__text ">
+                  Fylo has improved our team productivity by an order of magnitude. Since
+                  making the switch our team has become a well-oiled collaboration machine.
+
+                  <footer class="features-card__footer">
+                    <div class="features-card__media">
+                      <img src="/images/avatar-testimonial.jpg" alt="Testimonial person one" class="features-card__image">
+                    </div>
+                    <div class="features-card__meta">
+                      <p class="features-card__name">Kyle Burton</p>
+                      <p class="features-card__job-title">Founder & CEO, Huddle</p>
+                    </div>
+                  </footer>
+                </blockquoute>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="info__wrapper">
+        <div class="info__row">
+          <div class="info__col info__col-sm-6">
+            <h2 class="info__title">Get early access today</h2>
+            <p class="info__copy">It only takes a minute to sign up and our free starter tier is extremely generous.
+            If you have any questions, our support team would be happy to help you.</p>
+          </div>
+          <div class="info__col info__col-sm-6">
+            <form action="/" class="info__form" id="info-form">
+              <label for="email" class="sr-only">Email</label>
+              <input type="text" class="info__input" placeholder="email@example.com" id="email">
+              <input type="submit" value="Get Started For Free" class="info__btn btn btn-primary">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container main-footer__wrapper">
+      <div class="main-footer__row">
+        <div class="main-footer__col main-footer__col-md-3">
+          <div class="main-footer__logo">
+            <a href="/" class="main-footer__link">
+              <img src="/images/logo.svg" alt="Flyo logo" class="main-footer__image">
+            </a>
+          </div>
+          <ul class="main-footer__contact main-footer-contact">
+            <li class="main-footer-contact__item">
+              <img src="/images/icon-email.svg" alt="Email icon" class="main-footer-contact__image">
+              <a href="tel:+6282352564288" class="main-footer__link">Phone: +62-8235-256-4288</a>
+            </li>
+            <li class="main-footer-contact__item">
+              <img src="/images/icon-email.svg" alt="Email icon" class="main-footer-contact__image">
+              <a href="tel:+6282352564288" class="main-footer__link"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__col main-footer__col-md-3">
+          <ul class="main-footer__navlist">
+            <li class="main-footer__navlist-item">
+              <a href="/" class="main-footer__link">Jobs</a>
+            </li>
+            <li class="main-footer__navlist-item">
+              <a href="/" class="main-footer__link">Press</a>
+            </li>
+            <li class="main-footer__navlist-item">
+              <a href="/" class="main-footer__link">Blog</a>
+            </li>
+            <li class="main-footer__navlist-item">
+              <a href="/" class="main-footer__link">About Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__col main-footer__col-md-3">
+          <ul class="main-footer__navlist">
+            <li class="main-footer__navlist-item">
+              <a href="/" class="main-footer__link">Contact Us</a>
+            </li>
+            <li class="main-footer__navlist-item">
+              <a href="/" class="main-footer__link">Terms</a>
+            </li>
+            <li class="main-footer__navlist-item">
+              <a href="/" class="main-footer__link">Privacy</a>
+            </li>
+        </div>
+        <div class="main-footer__col main-footer__col-md-3">
+          <ul class="main-footer__social-media main-footer-social-media">
+            <li class="main-footer-social-media__item">
+              <a href="//facebook.com/ledi.hildawan/" class="main-footer__link">
+                <img src="/images/facebook.svg" alt="Facebook logo" class="main-footer-social-media__image">
+                <span class="sr-only">Ledi's Hildawan Facebook</span>
+              </a>
+            </li>
+            <li class="main-footer-social-media__item">
+              <a href="//twitter.com/ledihildawan/" class="main-footer__link">
+                <img src="/images/twitter.svg" alt="Twitter logo" class="main-footer-social-media__image">
+                <span class="sr-only">Ledi's Hildawan Twitter</span>
+              </a>
+            </li>
+            <li class="main-footer-social-media__item">
+              <a href="//instagram.com/ledi.hildawan/" class="main-footer__link">
+                <img src="/images/instagram.svg" alt="Instagram logo" class="main-footer-social-media__image">
+                <span class="sr-only">Ledi's Hildawan Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
