@@ -1,0 +1,14 @@
+.main-nav__menu {
+  display: flex;
+
+  & > .main-nav__menu-item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.main-nav__link {
+  color: hsl(243, 87%, 12%);
+  text-decoration: none;
+}

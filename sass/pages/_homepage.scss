@@ -1,0 +1,63 @@
+.intro {
+  text-align: center;
+}
+
+.intro__title {
+  margin-bottom: 25px;
+}
+
+.intro__copy {
+  margin-bottom: 25px;
+}
+
+.intro__input {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.intro__btn {
+  width: 100%;
+  display: block;
+}
+
+.features {
+  margin-top: 70px;
+  padding-bottom: 70px;
+  background-color: hsl(240, 75%, 98%);
+  text-align: center;
+
+  &::before {
+    content: "";
+    height: 53px;
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    background-image: url(/images/bg-curve-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.features__title {
+  margin-bottom: 25px;
+}
+
+.features__copy {
+  margin-bottom: 20px;
+}
+
+.features__link {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.info {
+  padding: 50px 0 60px;
+  text-align: center;
+}
+
+.main-footer {
+  padding: 50px 0 40px;
+}

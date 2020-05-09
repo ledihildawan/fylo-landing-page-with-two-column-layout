@@ -1,3 +1,79 @@
 @import "vendors/normalize";
+@import "vendors/modern-css-reset";
 
-@import "base/reset";
+$ff-title: "Raleway", sans-serif;
+$ff-body: "Open Sans", sans-serif;
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: $ff-body;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $ff-title;
+}
+
+.sr-only {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+
+.container {
+  padding: 0 30px;
+}
+
+.main-header {
+  position: sticky;
+  top: 0;
+  padding: 20px 0;
+  background: rgba(#fff, 0.95);
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.main-header__logo-image {
+  width: 70px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-xs-reverse {
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@for $i from 1 through 100 {
+  $i: $i * 10;
+
+  .mb-xs-#{$i} {
+    @media (max-width: 767px) {
+      margin-bottom: $i + px;
+    }
+  }
+}
+
+.main-content {
+  padding-top: 60px;
+}
+
+@import "components/main-nav";
+@import "pages/homepage";
